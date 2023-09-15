@@ -1,14 +1,4 @@
-/**
-* Template Name: Serenity
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/serenity-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -174,7 +164,7 @@ h6 {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #4874ed;
+  background: #0d0d0e;
 }
 
 .navbar .dropdown ul {
@@ -308,9 +298,9 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #4e73df;
+  color: #000000;
     color: #fff;
-  background: #1544d1;
+  background: #0e0e0e;
 }
 }
 
@@ -734,15 +724,22 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services .imgs {
+  height: 250px;
+  padding-right: 10%;
+}
 .services .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  border-radius: 1000px;
-  margin: 0 10px 40px 10px;
+  border-radius: 100px;
+  margin: 0 10px 10px 10px;
   background: #fff;
   box-shadow: 0 2px 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .services .icon-box:hover {
@@ -2316,4 +2313,26 @@ section {
   margin-left: auto;
   margin-right: auto;
   height: auto;
+}
+.search{
+  
+  top:6px;
+  left:10px;
+}
+
+.form-control{
+    
+    border:none;
+    padding-left:32px;
+}
+
+.form-control:focus{
+    
+    border:none;
+    box-shadow:none;
+}
+
+.green{
+    
+    color:green;
 }

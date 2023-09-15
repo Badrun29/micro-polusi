@@ -298,9 +298,6 @@
     });
   });
 
-  /**
-   * Initiate Pure Counter
-   */
   new PureCounter();
 })();
 
@@ -313,9 +310,5 @@ function updateTime() {
 
   document.getElementById("current-time").textContent = timeString;
 }
-
-// Memanggil updateTime() pertama kali
 updateTime();
-
-// Memperbarui waktu setiap detik
 setInterval(updateTime, 1000);

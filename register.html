@@ -39,11 +39,12 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="login.html">Logout</a></li>
+          <li><a class="active" href="login.html">Login</a></li>
+          <li><a class="active" href="register.html">Register</a></li>
 
 
 
-          <li><a class="getstarted" href="1.html">News</a></li>
+          <li><a class="getstarted" href="1.html" id="News">News</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -53,165 +54,41 @@
 
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
-      <h1>Jelajahi Kualitas Udara Anda</h1>
-      <h2>Indeks kualitas udara Kota Anda</h2>
-      <div class="card">
-        <h2 class="cuaca text-dark">Cuaca Hari Ini <span id="current-time"></span></h2>
-        <img class="weather-icon" src="/assets/img/cuaca3.png" alt="Cuaca">
-        <p><strong>Kota:</strong> Jakarta</p>
-        <p><strong>Suhu:</strong> 30°C</p>
-        <p><strong>Kelembaban:</strong> 70%</p>
-        <p><strong>Deskripsi:</strong> Cerah</p>
-        <p><strong>Angin:</strong> 10 km/jam</p>
+        <h1>Jelajahi Kualitas Udara Anda</h1>
+        <h2>Indeks kualitas udara Kota Anda</h2>
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label text-white">Username</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label text-white rounded-5">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label text-white rounded-5">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check text-white">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark"><a href="login.html" class="text-white" id="regist">Register</a></button>
+                  </form>
+            </div>
+        </div>
     </div>
     </div>
   </section>
 
-  <main id="main">
-
-   
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4">
-            <div class="row justify-content-center">
-
-              <div class="">
-                <div class="count-box py-5">
-                  <i class="fa fa-check-circle-o"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="999" class="purecounter">0</span>
-                  <p>Rangking kota paling berpolusi di Indonesia
-                    real time</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-6 video-box align-self-baseline position-relative">
-            <div class="col-lg-12 pt-3 pt-lg-0 content text-center">
-               
-            </div>
-            <div class="mb-2 d-flex justify-content-between align-items-center">
-        
-              <div class="position-relative">
-                  <span class="position-absolute search"><i class="fa fa-search"></i></span>
-                  <input class="form-control w-100" placeholder="Search by order#, name...">
-              </div>
-              
-              <div class="px-2">
-                  
-                  <span>Filters <i class="fa fa-angle-down"></i></span>
-                  <i class="fa fa-ellipsis-h ms-3"></i>
-              </div>
-              
-          </div>
-          <div class="table-responsive">
-          <table class="table table-responsive table-borderless">
-              
-            <thead>
-              <tr class="bg-light">
-                <th scope="col" width="5%"><input class="form-check-input" type="checkbox"></th>
-                <th scope="col" width="5%">#</th>
-                <th scope="col" width="20%">City</th>
-                <th scope="col" width="10%">Status</th>
-              </tr>
-            </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>1</td>
-            <td>Palembang, Sumatera Selatan</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>2</td>
-            <td>Kota Depok, Jawa Barat</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>3</td>
-            <td>South Tangerang, Provinsi Banten</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>4</td>
-            <td>Bali</td>
-            <td><i class="fa fa-exclamation-triangle text-success"></i><span class="ms-1">Aman</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>5</td>
-            <td>Indralaya, Sumatera Selatan</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>6</td>
-            <td>Kalimantan</td>
-            <td><i class="fa fa-exclamation-triangle text-success"></i><span class="ms-1">Aman</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>7</td>
-            <td>Kabupaten Serang, Provinsi Banten</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>8</td>
-            <td>Jakarta, Jakarta</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          <tr>
-            <th scope="row"><input class="form-check-input" type="checkbox"></th>
-            <td>9</td>
-            <td>Serpong, Jawa Barat</td>
-            <td><i class="fa fa-exclamation-triangle text-danger"></i><span class="ms-1">Tidak Sehat</span></td>
-          </tr>
-          
-        </tbody>
-      </table>
-        
-        </div>
-          </div>
-
-          <div class="col-lg-6 pt-3 pt-lg-0 content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28229242355!2d106.74694501099273!3d-6.229569425696176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1694787442558!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    
-    <div class="container">
-        <h2 class="text-center pt-3 ">Beberapa produk untuk melindungi dari polusi udara?</h2>
-        <p class="text-center">Kurangi paparan polusi udara Anda di Indonesia</p>
-        <div class="row">
-            <div class="col-4">
-                <img src="/assets/img/masker.webp" alt="">
-                
-            </div>
-            <div class="col-4">
-                <img src="/assets/img/pantauan-kualitan.webp" alt="">
-            </div>
-            <div class="col-4">
-                <img src="/assets/img/pemurni udara.webp" alt="">
-            </div>
-        </div>
-    </div>
-
-
-     
+  <main id="main"> 
      <section id="services" class="services ">
       <div class="container">
 
@@ -326,6 +203,13 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+        document.getElementById("regist").addEventListener("click", showAlert);
+
+        function showAlert() {
+            alert("Registrasi Berhasil, Silahkan Login");
+        }
+  </script>
 
 </body>
 
