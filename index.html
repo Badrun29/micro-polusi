@@ -55,7 +55,7 @@
       <h1>Jelajahi Kualitas Udara Anda</h1>
       <h2>Indeks kualitas udara Kota Anda</h2>
       <div class="card">
-        <h2 class="cuaca text-dark">Cuaca Hari Ini</h2>
+        <h2 class="cuaca text-dark">Cuaca Hari Ini <span id="current-time"></span></h2>
         <img class="weather-icon" src="/assets/img/cuaca3.png" alt="Cuaca">
         <p><strong>Kota:</strong> Jakarta</p>
         <p><strong>Suhu:</strong> 30°C</p>
@@ -72,39 +72,16 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="row justify-content-end">
-          <div class="col-lg-11">
-            <div class="row justify-content-end">
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="row justify-content-center">
 
-              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+              <div class="">
                 <div class="count-box py-5">
                   <i class="bi bi-pencil-square"></i>
                   <span data-purecounter-start="0" data-purecounter-end="999" class="purecounter">0</span>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                <div class="count-box py-5">
-                  <i class="bi bi-reply"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="999" class="purecounter">0</span>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                <div class="count-box pb-5 pt-0 pt-lg-5">
-                  <i class="bi bi-chat-dots"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="999" class="purecounter">0</span>
-                  <p>Lorem, ipsum dolor.</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
-                <div class="count-box pb-5 pt-0 pt-lg-5">
-                  <i class="bi bi-check-all"></i>
-                  <span data-purecounter-start="0" data-purecounter-end="999" class="purecounter">0</span>
-                  <p>Lorem, ipsum dolor.</p>
+                  <p>Rangking kota paling berpolusi di Indonesia
+                    real time</p>
                 </div>
               </div>
 
@@ -115,25 +92,72 @@
         <div class="row">
 
           <div class="col-lg-6 video-box align-self-baseline position-relative">
-            <div class="col-lg-12 pt-3 pt-lg-0 pb-3 content text-center">
-                <h3>Kualitas Udara di tempat anda saat ini.</h3>
+            <div class="col-lg-12 pt-3 pt-lg-0 content text-center">
+               
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28229242355!2d106.74694501099273!3d-6.229569425696176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1694787442558!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <table class="table table-white">
+                  <tr>
+                    <th scope="row">#</th>
+                    <td colspan="2" class="table-active">City</td>
+                    <td>AQI US</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td colspan="2" class="table-active">Palembang, Sumatra Selatan</td>
+                    <td>175</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td colspan="2" class="table-active">	Kota Pontianak, Kalimantan Barat</td>
+                    <td>172</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2" class="table-active">Kota Depok, Jawa Barat</td>
+                    <td>167</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td colspan="2" class="table-active">Gedongtataan, Provinsi Lampung</td>
+                    <td>165</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td colspan="2" class="table-active">Cileungsir, Jawa Barat</td>
+                    <td>163</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td colspan="2" class="table-active">Indralaya, Sumatera Selatan</td>
+                    <td>163</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7</th>
+                    <td colspan="2" class="table-active">Pasarkemis, Jawa Barat</td>
+                    <td>160</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">8</th>
+                    <td colspan="2" class="table-active">Serpong, Jawa Barat</td>
+                    <td>159</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">9</th>
+                    <td colspan="2" class="table-active">Karawang, Jawa Barat</td>
+                    <td>154</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">10</th>
+                    <td colspan="2" class="table-active">Karawang, Jawa Barat</td>
+                    <td>154</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
           </div>
 
           <div class="col-lg-6 pt-3 pt-lg-0 content">
-            <h3>Layanan pemantau Polusi & cuaca sekitar.</h3>
-            <p class="fst-italic">
-            Untuk itu Pemerintah Republik Indonesia membentuk Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional (SP4N) - Layanan Aspirasi dan Pengaduan Online Rakyat (LAPOR!) adalah layanan penyampaian semua aspirasi dan pengaduan masyarakat Indonesia melalui beberapa kanal pengaduan yaitu website www.lapor.go.id, SMS 1708 (Telkomsel, Indosat, Three), Twitter @lapor1708 serta aplikasi mobile (Android dan iOS). Lembaga pengelola SP4N-LAPOR! adalah Kementerian Pendayagunaan Aparatur Negara dan Reformasi Birokrasi (Kementerian PANRB) sebagai Pembina Pelayanan Publik, Kantor Staf Presiden (KSP) sebagai Pengawas Program Prioritas Nasional dan Ombudsman Republik Indonesia sebagai Pengawas Pelayanan Publik. LAPOR! telah ditetapkan sebagai Sistem Pengelolaan Pengaduan Pelayanan Publik Nasional (SP4N) berdasarkan Peraturan Presiden Nomor 76 Tahun 2013 dan Peraturan Menteri Pendayagunaan Aparatur Negara dan Reformasi Birokrasi Nomor 3 Tahun 2015.
-            </p>
-            <ul>
-              <li><i class="bx bx-check-double"></i> Penyelenggara dapat mengelola pengaduan dari masyarakat secara sederhana, cepat, tepat, tuntas, dan terkoordinasi dengan baik;.</li>
-              <li><i class="bx bx-check-double"></i> Penyelenggara memberikan akses untuk partisipasi masyarakat dalam menyampaikan pengaduan.</li>
-              <li><i class="bx bx-check-double"></i> Meningkatkan kualitas pelayanan publik.</li>
-            </ul>
-            <p>
-            SP4N-LAPOR! telah terhubung dengan 34 Kementerian, 96 Lembaga, dan 493 Pemerintah daerah di Indonesia
-            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28229242355!2d106.74694501099273!3d-6.229569425696176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1694787442558!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
         </div>
@@ -141,38 +165,45 @@
       </div>
     </section>
 
-    <section id="cta" class="cta">
-      <div class="container" data-aos="fade-in">
-
-        <div class="text-center">
-          <h3>Hubungi lebih lanjut</h3>
-          <p> Hubungi kami para pemuda kosan 2 dara untuk info lebih lanjut</p>
-          <a class="cta-btn" href="https://wa.me/6283160932841">Call Me </a>
+    
+    <div class="container">
+        <h2 class="text-center pt-3 ">Beberapa produk untuk melindungi dari polusi udara?</h2>
+        <p class="text-center">Kurangi paparan polusi udara Anda di Indonesia</p>
+        <div class="row">
+            <div class="col-4">
+                <img src="/assets/img/masker.webp" alt="">
+                
+            </div>
+            <div class="col-4">
+                <img src="/assets/img/pantauan-kualitan.webp" alt="">
+            </div>
+            <div class="col-4">
+                <img src="/assets/img/pemurni udara.webp" alt="">
+            </div>
         </div>
+    </div>
 
-      </div>
-    </section>
 
      
      <section id="services" class="services ">
       <div class="container">
 
         <div class="section-title pt-5" data-aos="fade-up">
-          <h2>Fitur-Fitur Aplikasi</h2>
+          <h2>Kontributor Pemerintah Terkemuka</h2>
         </div>
 
         <div class="row">
           <div class="col-md-6">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bi bi-gear-wide-connected" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Admin Control</a></h4>
+              <h4 class="title"><a href="">Indonesia Ministry of Environment and Forestry</a></h4>
               <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi laborum repellendus quo consectetur asperiores. Ut molestias exercitationem quod, veniam pariatur ratione ullam corporis soluta. Velit necessitatibus neque reprehenderit culpa sed!</p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bi bi-person-square" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">User Control</a></h4>
+              <h4 class="title"><a href="">Indonesian Meteorology, Climatology, and Geophysics Council</a></h4>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere debitis distinctio repellat delectus aliquid! Quaerat nisi aliquid numquam quo voluptatibus ipsa, tempora corporis eius assumenda, blanditiis ullam magnam temporibus!</p>
             </div>
           </div>
@@ -180,34 +211,17 @@
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-card-checklist" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Tulis Pengaduan</a></h4>
+              <h4 class="title"><a href="">U.S. Department of State</a></h4>
               <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non perspiciatis, corporis rem deleniti ut quia inventore consequatur aliquid placeat delectus recusandae dolores eveniet pariatur culpa doloribus quaerat fugiat. Quae, blanditiis.</p>
             </div>
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-printer-fill" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Cetak Laporan</a></h4>
+              <h4 class="title"><a href="">Unidentified Contributor</a></h4>
               <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quaerat suscipit iste adipisci temporibus fugit atque veritatis ratione soluta cumque facilis obcaecati itaque, quidem dolorum, porro quod aliquid consequatur maxime.</p>
             </div>
           </div>
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Kelola Petugas</a></h4>
-              <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta inventore? Reprehenderit quaerat porro quibusdam non est perspiciatis quod, voluptatum nulla, velit, molestias culpa voluptates eum voluptate doloremque maiores nostrum.</p>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Data Pengaduan</a></h4>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos quo cupiditate aspernatur incidunt nesciunt officiis, consequuntur ex nihil necessitatibus temporibus tempora? Similique eligendi nobis dolores esse iste, sapiente quod.</p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
