@@ -309,6 +309,7 @@ function updateTime() {
   const timeString = `${hours}:${minutes}:${seconds}`;
 
   document.getElementById("current-time").textContent = timeString;
+  document.getElementById("current-time1s").textContent = timeString;
 }
 updateTime();
 setInterval(updateTime, 1000);

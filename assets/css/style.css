@@ -10,7 +10,7 @@ a {
 }
 
 a:hover {
-  color: #aacd6b;
+  color: #7F00FF;
   text-decoration: none;
 }
 
@@ -24,7 +24,7 @@ h6 {
 }
 
 #main {
-  margin-top: 70px;
+  margin-top: 90px;
   z-index: 3;
   position: relative;
 }
@@ -526,6 +526,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding-bottom: 15px;
   background: #fff;
+  align-items: center;
 }
 
 .about .count-box {
@@ -2336,3 +2337,44 @@ section {
     
     color:green;
 }
+
+.box-atas{
+  text-align: center;
+  padding-top: 1ch;
+  padding-bottom: 1ch;
+  color: white;
+  background-color: #7F00FF;
+
+}
+
+.list-atas {
+  text-align: center;
+  display: inline-block; 
+  border-bottom: 1px solid #ffffff;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.list-atas a {
+  display: inline-block; 
+  padding: 0 10px;
+  align-items: center;
+  color: white;
+}
+
+
+.list-a {
+  text-align: center;
+  display: inline-block; 
+  border-bottom: 1px solid #000;
+  align-items: center;
+  text-align: center;
+}
+
+.list-a a {
+  display: inline-block; 
+  padding: 0 10px;
+  align-items: center;
+}
+
