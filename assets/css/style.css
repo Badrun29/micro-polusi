@@ -2352,6 +2352,13 @@ section {
   color: white;
 }
 
+.list-atas a:hover {
+  color: #585252;
+  text-decoration: none;
+}
+
+
+
 .list-atas a {
   display: inline-block; 
   padding: 0 10px;
